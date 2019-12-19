@@ -1,0 +1,25 @@
+
+body{
+background-color:white;
+background-image: url(../img/02.jpg);
+background-size:100%;
+background-repeat: no-repeat;
+background-position: top;
+background-attachment: fixed;
+text-align: center;
+font-family: 'Bangers', cursive;
+}
+
+.tx{
+    height: auto;
+    width: auto;
+    background-color: rgba(252, 248, 248, 0.7);
+    border-radius: 20px;
+}
+.row{
+    margin: auto;
+}
+.contain{
+   
+    margin:auto;
+}
