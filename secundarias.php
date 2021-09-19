@@ -13,12 +13,15 @@ if(!isset($_SESSION["user"])){
     <title>Miembros</title>
     <link rel=”shortcut icon” type=”image/ico” href=”./img/favicon.ico”/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    
     <link rel="stylesheet" href="./css/home/fontello.css">
     <link rel="stylesheet" href="./css/home/home.css">
     <link rel="stylesheet" href="./css/home/menu.css">
     <link rel="stylesheet" href="./css/home/general.css">
     <link rel="stylesheet" href="./css/miembros.css">
+  
+	<script src="./js/vali.js"></script>
+	<script src="./js/valr.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -26,54 +29,31 @@ if(!isset($_SESSION["user"])){
 <?php
     include ("./pag/menu.php");
     ?>
-  
-<div class="container">
-<div class="row">
-<div class="col-10 offset-1 tx">
 
-<div class=" gg" > <span class="input-group-addon">Buscar</span>
-    <input id="entradafilter" type="text" class="form-control">
-</div>
+<form action="./base/cargasec.php" class="pepe" id="pepe" method="" onsubmit="return valr();">
+			<H2>Registrar secundarias</H2>
+				
+					
 
-<H4>Miembros</H4>
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Nick</th>
-      <th>Codigo</th>
-    </tr>
-  </thead>
-  <tbody class="contenidobusqueda">
-  <?php 
-include ("./pag/ami.php");
-?>
-   </tbody>
-</table>
-
-
-<H4>secundarias</H4>
-<table class="table">
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Nick</th>
-      <th>Codigo</th>
-    </tr>
-  </thead>
-  <tbody  class="contenidobusqueda">
-  <?php 
-include ("./pag/amisec.php");
-?>
-   </tbody>
-</table>
+					<label for="nick">Nombre cuenta secundaria</label>
+					<input type="text" name="nick" id="nick" >
+<br>
+					<label for="con">Codigo de amistad</label>
+					<input type="text" name="cod" id="cod" >
+<br>
+				<label for="team">Equipo</label>
+				<select class="custom-select" name="team" id="team" >
+					<option value="1">Sabiduria</option>
+					<option value="2">Valor</option>
+					<option value="3">Instinto</option>
+				</select>
+				<input type="submit" value="Aceptar" name="sumitr">
+				</form>
 
 
 
 
-</div>
-</div>
-</div>
+
 </main>
 <footer>
     <?php
@@ -87,7 +67,6 @@ include ("./pag/amisec.php");
 <script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
 <script src="./js/copy.js"></script>
 <script src="./js/menu.js"></script>
-<script src="./js/torbus.js"></script>
 
 </body>
 </html>

@@ -1,3 +1,9 @@
+<?php 
+session_start();
+if(!isset($_SESSION["user"])){
+    header('Location: ./ingreso.php'); 
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,24 +12,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reglamento</title>
-    <link rel=”shortcut icon” type=”image/ico” href=”./img/favicon.ico”/>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<link rel="stylesheet" href="./style/raid.css">
-<link rel="stylesheet" href="./style/miembros.css">
+    <link rel="stylesheet" href="./css/home/fontello.css">
+    <link rel="stylesheet" href="./css/home/home.css">
+    <link rel="stylesheet" href="./css/home/menu.css">
+<link rel="stylesheet" href="./css/home/reg.css">
+    
 <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
 
 </head>
 <body>
+<header>
 <?php
     include ("./pag/menu.php");
     ?>
-<div class="contain">
-<div class="row">
-<div class="col-md-3 offset-md-4 col-sm-3 offset-sm-2 ">
-<img src="./img/logo2.png" alt="" class="im">
-</div>
 
-<div class="col-8 offset-2 tx">
+
+
+
+
 <br>
 <br>
     <H4 >REGLAS QUE PERMITIRÁN UNA MEJOR CONVIVENCIA ENTRE EL GRUPO</H4>
@@ -53,17 +59,22 @@ Pero toda incursión que se requiera participación de varias personas (Las de n
 <h5>Regla°5 (PvP/Players Vs Players)</h5>
     <p>Cada mes realizaremos uno ó dos torneos de la copa que esté actualmente. 
 Dado el puntaje que te quede nuestro ranking, tendrás la posibilidad de participar en el torneo zonal contra distintas localidades.</p>
+<h5>Regla°6  LEY SHAOKAN</h5>
+    <p>todo el que saque 2 o mas shiny de distinta especie durante el dia debe publicarlo y sera premiado con un BAN de 5 segundos </p>
 <br>
 <br>
-</div>
-</div>
-</div>
-</div>
 
+</main>
+<footer>
+    <?php
+    include ("./pag/footer.php");
+    ?>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="./js/menu.js"></script>
+
 </body>
 </html>

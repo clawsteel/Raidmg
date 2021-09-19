@@ -1,47 +1,26 @@
-
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse " id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-      
-        <a class="nav-link" href="./index.php">| Home | <span class="sr-only"></span></a>
+<div class="contenedor">
+            
+            
+            
+            
         
-      </li>
-      <li class="nav-item active">
-      
-        <a class="nav-link" href="./miembros.php">| Miembros |</a>
-        
-      </li>
-      <li class="nav-item active" >
-      
-        <a class="nav-link" href="./reglamento.php">| Reglamento |</a>
-        
-      </li>
-      <li class="nav-item active" >
-      
-      <a class="nav-link" href="./investigacion.php">| Misiones |</a>
-      
-    </li>
-    <li class="nav-item active" >
-      
-      <a class="nav-link" href="./huevos.php">| Huevos |</a>
-      
-    </li><li class="nav-item active" >
-      
-      <a class="nav-link" href="./raid.php">| Raids |</a>
-      
-    </li>
-      <li class="nav-item active fin" >
-      
-      <a class="nav-link" href="./msj.php">| Contactar |</a>
-      
-    </li>
+        <span class="nav-bar" id="btnmenu"><label class="icon-menu" for="menu-bar"></label></span>
+        <nav class="main-nav">
+            <ul class="menu" id="menu">
+                <li class="menu-item"><a href="./home.php" class="menu-link">Inicio</a></li>
+                <li class="menu-item"><a href="./reglamento.php" class="menu-link">Reglamento</a></li>
+                <li class="menu-item"><a href="./miembros.php" class="menu-link">Lista de amigos</a></li>
+                <li class="menu-item"><a href="./secundarias.php" class="menu-link">cargar secundarias</a></li>
+            </ul>
+        </nav>
 
-     
-    </ul>
-  </div>
-</nav> 
+
+
+
+        </div>
+        </header> 
+   <main>
+        <section id="banner"> 
+       
+            <img src="./img/bn.png" alt="" class="banimg">
+        </section>

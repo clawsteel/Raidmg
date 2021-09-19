@@ -1,0 +1,44 @@
+.slider{
+    width: 95%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slideli{
+    width: 100%;
+    list-style: none;
+
+}
+
+.slidul{
+    display: flex;
+    padding: 0;
+    width: 300%;
+
+    animation: cambio 20s infinite alternate;
+}
+
+.sliimg{
+    width: 100%;
+
+}
+
+
+@keyframes cambio {
+    0% {margin-left:0;}
+    35% {margin-left:0;}
+
+    40% {margin-left:-100%;}
+    65% {margin-left:-100%;}
+
+    70% {margin-left:-200%;}
+   100% {margin-left:-200%;}
+}
+
+@media(min-width:1024px){
+
+
+
+
+    
+}
